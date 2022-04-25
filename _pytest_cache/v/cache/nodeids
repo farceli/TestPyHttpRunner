@@ -1,0 +1,5 @@
+[
+  "api/api_v1_nft_info_test.py::TestCaseApiV1NftInfo::test_start",
+  "testcases/demo_testcase_ref_test.py::TestCaseDemoTestcaseRef::test_start",
+  "testcases/demo_testcase_request_test.py::TestCaseDemoTestcaseRequest::test_start"
+]
