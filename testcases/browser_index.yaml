@@ -1,0 +1,13 @@
+# test
+config:
+  name: "至信链浏览器index"
+  base_url: "https://zxscanapi.qq.com/api/v1"
+  verify: False
+
+teststeps:
+  - name: 至信链浏览器index
+    api: ./api/api_v1_browser_index.yaml
+    variables:
+      nftId: ""
+    validate:
+      - eq: [ "body.retMsg", "请求成功" ]

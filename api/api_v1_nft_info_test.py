@@ -21,7 +21,7 @@ class TestCaseApiV1NftInfo(HttpRunner):
                     "nftId": "",
                 }
             )
-            .get("http://175.27.11.195:80/api/v1/nft/info")
+            .get("/nft/info")
             .with_params(**{"nftId": "$nftId"})
             .with_headers(
                 **{
