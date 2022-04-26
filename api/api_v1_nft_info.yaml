@@ -4,21 +4,19 @@ variables:
   # 鉴权
   secretId: ""
   secretKey: ""
-  signData: "{generateApiSign($secretId,$secretKey)}"
-  traceId: "{traceId()}"
+  signData: ""
+  traceId: ""
   # nft info查询
   nftId: ""
 request:
   method: GET
   url: /nft/info
   params:
-    nftId: "$nftId"
+    nftId: "nftId"
   headers:
     Content-Type: "application/json;charset=utf-8"
-    Signature-Time: "{getMapValue($signData,SignatureTime)}"
-    Signature: "{getMapValue($signData,Signature)}"
-    Cloud-Trace-Id: "$traceId"
-    Secret-Id: "$secretId"
-    Nonce: "{getMapValue($signData,Nonce)}"
-#  validate:
-#    eq: [ "body.retMsg","签名时间格式错误7" ]
+    Signature-Time: ""
+    Signature: ""
+    Cloud-Trace-Id: ""
+    Secret-Id: ""
+    Nonce: ""

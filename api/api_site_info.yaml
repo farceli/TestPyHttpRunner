@@ -1,0 +1,8 @@
+name: "site info api"
+variables:
+  id: ""
+request:
+  method: GET
+  url: /api/nodes/show.json
+  params:
+    id: "$id"

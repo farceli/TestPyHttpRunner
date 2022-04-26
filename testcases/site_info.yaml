@@ -1,0 +1,10 @@
+config:
+  name: "site info"
+  base_url: "https://www.v2ex.com"
+  verify: False
+
+teststeps:
+  - name: request site info
+    api: ./api/api_site_info.yaml
+    variables:
+      id: "1"
